@@ -2,6 +2,7 @@ var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
 var request = require('superagent');
+var ReactCreateClass = require('create-react-class');
 
 var Moment = require('moment');
 
@@ -10,7 +11,7 @@ var BrewSearch = require('./brewSearch.jsx');
 var BrewLookup = require('./brewLookup/brewLookup.jsx');
 
 
-var HomebrewAdmin = React.createClass({
+var HomebrewAdmin = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			admin_key : ''

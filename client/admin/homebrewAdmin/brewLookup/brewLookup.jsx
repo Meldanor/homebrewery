@@ -1,12 +1,13 @@
 const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const request = require('superagent');
 const Moment = require('moment');
 
 
-const BrewLookup = React.createClass({
+const BrewLookup = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			adminKey : '',

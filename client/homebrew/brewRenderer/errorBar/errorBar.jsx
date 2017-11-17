@@ -1,8 +1,9 @@
 var React = require('react');
 var _     = require('lodash');
 var cx    = require('classnames');
+var ReactCreateClass = require('create-react-class');
 
-var ErrorBar = React.createClass({
+var ErrorBar = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			errors : []

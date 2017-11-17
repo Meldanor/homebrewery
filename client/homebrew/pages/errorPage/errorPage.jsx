@@ -1,6 +1,7 @@
 var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
+var ReactCreateClass = require('create-react-class');
 
 var Nav = require('naturalcrit/nav/nav.jsx');
 var Navbar = require('../../navbar/navbar.jsx');
@@ -10,7 +11,7 @@ var RecentNavItem = require('../../navbar/recent.navitem.jsx');
 
 var BrewRenderer = require('../../brewRenderer/brewRenderer.jsx');
 
-var ErrorPage = React.createClass({
+var ErrorPage = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			ver : '0.0.0',

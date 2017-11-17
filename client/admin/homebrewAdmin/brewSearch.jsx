@@ -1,10 +1,11 @@
 var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
+var ReactCreateClass = require('create-react-class');
 
 var request = require('superagent');
 
-var BrewSearch = React.createClass({
+var BrewSearch = ReactCreateClass({
 
 	getDefaultProps: function() {
 		return {

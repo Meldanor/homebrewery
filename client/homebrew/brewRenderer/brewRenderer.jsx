@@ -1,6 +1,7 @@
 const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const Markdown = require('naturalcrit/markdown.js');
 const ErrorBar = require('./errorBar/errorBar.jsx');
@@ -11,7 +12,7 @@ const RenderWarnings = require('homebrewery/renderWarnings/renderWarnings.jsx')
 const PAGE_HEIGHT = 1056;
 const PPR_THRESHOLD = 50;
 
-const BrewRenderer = React.createClass({
+const BrewRenderer = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			text : '',

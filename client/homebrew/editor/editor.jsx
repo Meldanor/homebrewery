@@ -1,6 +1,7 @@
 const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const CodeEditor = require('naturalcrit/codeEditor/codeEditor.jsx');
 const SnippetBar = require('./snippetbar/snippetbar.jsx');
@@ -13,7 +14,7 @@ const splice = function(str, index, inject){
 
 const SNIPPETBAR_HEIGHT = 25;
 
-const Editor = React.createClass({
+const Editor = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			value : '',

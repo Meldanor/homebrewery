@@ -2,10 +2,11 @@ const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
 const request = require("superagent");
+const ReactCreateClass = require('create-react-class');
 
 const SYSTEMS = ['5e', '4e', '3.5e', 'Pathfinder']
 
-const MetadataEditor = React.createClass({
+const MetadataEditor = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			metadata: {

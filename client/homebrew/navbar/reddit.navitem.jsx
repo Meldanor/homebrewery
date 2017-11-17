@@ -1,6 +1,7 @@
 var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
+var ReactCreateClass = require('create-react-class');
 
 //var striptags = require('striptags');
 
@@ -10,7 +11,7 @@ const MAX_URL_SIZE = 2083;
 const MAIN_URL = "https://www.reddit.com/r/UnearthedArcana/submit?selftext=true"
 
 
-var RedditShare = React.createClass({
+var RedditShare = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			brew : {

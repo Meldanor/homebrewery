@@ -2,10 +2,11 @@
 const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const DISMISS_KEY = 'dismiss_render_warning';
 
-const RenderWarnings = React.createClass({
+const RenderWarnings = ReactCreateClass({
 	getInitialState: function() {
 		return {
 			warnings: {}

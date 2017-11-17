@@ -1,6 +1,7 @@
 {
 	"assets": ["*.png","*.otf", "*.ico"],
 	"shared":[
+		"./shared"
 	],
 	"libs" : [
 		"react",
@@ -14,6 +15,12 @@
 		"superagent",
 		"marked",
 		"pico-router",
-		"pico-flux"
+		"pico-flux",
+		"process",
+		"object-assign",
+		"fbjs/lib/emptyObject.js",
+		"fbjs/lib/invariant.js",
+		"fbjs/lib/warning.js",
+		"create-react-class"
 	]
 }

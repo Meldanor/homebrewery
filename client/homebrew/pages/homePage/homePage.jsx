@@ -2,6 +2,7 @@ const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
 const request = require("superagent");
+const ReactCreateClass = require('create-react-class');
 
 const Nav = require('naturalcrit/nav/nav.jsx');
 const Navbar = require('../../navbar/navbar.jsx');
@@ -17,7 +18,7 @@ const BrewRenderer = require('../../brewRenderer/brewRenderer.jsx');
 
 
 
-const HomePage = React.createClass({
+const HomePage = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			welcomeText : '',

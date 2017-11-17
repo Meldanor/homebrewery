@@ -2,8 +2,9 @@ const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
 const Markdown = require('naturalcrit/markdown.js');
+const ReactCreateClass = require('create-react-class');
 
-const PrintPage = React.createClass({
+const PrintPage = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			query : {},

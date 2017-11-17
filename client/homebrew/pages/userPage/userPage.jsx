@@ -1,6 +1,7 @@
 const React = require('react');
 const _     = require('lodash');
 const cx    = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const Nav = require('naturalcrit/nav/nav.jsx');
 const Navbar = require('../../navbar/navbar.jsx');
@@ -17,7 +18,7 @@ const brew = {
 const BREWS = _.times(25, ()=>{ return brew});
 
 
-const UserPage = React.createClass({
+const UserPage = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			username : '',

@@ -1,6 +1,7 @@
 const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const CreateRouter = require('pico-router').createRouter;
 
@@ -13,7 +14,7 @@ const ErrorPage = require('./pages/errorPage/errorPage.jsx');
 const PrintPage = require('./pages/printPage/printPage.jsx');
 
 let Router;
-const Homebrew = React.createClass({
+const Homebrew = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			url : '',

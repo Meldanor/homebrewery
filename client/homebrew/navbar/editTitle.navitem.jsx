@@ -2,11 +2,12 @@ var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
 var Nav = require('naturalcrit/nav/nav.jsx');
+var ReactCreateClass = require('create-react-class');
 
 const MAX_TITLE_LENGTH = 50;
 
 
-var EditTitle = React.createClass({
+var EditTitle = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			title : '',

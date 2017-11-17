@@ -1,6 +1,7 @@
 const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
+const ReactCreateClass = require('create-react-class');
 
 const Nav = require('naturalcrit/nav/nav.jsx');
 const Navbar = require('../../navbar/navbar.jsx');
@@ -13,7 +14,7 @@ const Account = require('../../navbar/account.navitem.jsx');
 const BrewRenderer = require('../../brewRenderer/brewRenderer.jsx');
 
 
-const SharePage = React.createClass({
+const SharePage = ReactCreateClass({
 	getDefaultProps: function() {
 		return {
 			brew : {
